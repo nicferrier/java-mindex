@@ -171,7 +171,7 @@ public class Mindex implements Runnable {
 
     final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     final ScheduledFuture<?> indexHandler
-        = scheduler.scheduleAtFixedRate(this, 10, 10, TimeUnit.MINUTES);
+        = scheduler.scheduleAtFixedRate(this, 30, 30, TimeUnit.MINUTES);
 
     public static void main(String[] argv) throws IOException {
         Mindex mindex = new Mindex();
