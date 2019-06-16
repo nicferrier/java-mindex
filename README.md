@@ -37,8 +37,20 @@ it could be a webserver.
 It simply walks all of the maven repository and reads in every Jar
 file and reads the classes in the jar file and stores them in indexes.
 
+The current indexes stored in the maven repository root are:
+
+* `.mindex.classes` space separated list of
+ * class name 
+ * package name
+ * jar file path
+* `.mindex.jars` 
+ * jar file path
+ * package + class name
+
+
 What it does not do yet is to then read the class files from each jar
 and further index each method... but that's coming.
+
 
 
 ## Other exciting things
