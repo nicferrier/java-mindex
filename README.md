@@ -50,10 +50,6 @@ The current indexes stored in the maven repository root are:
 
 * `.mindex.methods` method name, then a space then the method definition
 
-What it does not do yet is to then read the class files from each jar
-and further index each method... but that's coming.
-
-
 
 ## Other exciting things
 
