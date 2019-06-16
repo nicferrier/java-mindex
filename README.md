@@ -39,14 +39,16 @@ file and reads the classes in the jar file and stores them in indexes.
 
 The current indexes stored in the maven repository root are:
 
+* `.mindex.jars` space separated list of
+  * jar file path
+  * package + class name
+
 * `.mindex.classes` space separated list of
   * class name 
   * package name
   * jar file path
-* `.mindex.jars` 
-  * jar file path
-  * package + class name
 
+* `.mindex.methods` method name, then a space then the method definition
 
 What it does not do yet is to then read the class files from each jar
 and further index each method... but that's coming.
